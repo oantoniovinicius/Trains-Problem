@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.MainControl">
+   <children>
+      <ImageView fx:id="backgroundThomas" fitHeight="600.0" fitWidth="893.0" layoutX="-81.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/bakcground.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="backgroundField" fitHeight="606.0" fitWidth="860.0" layoutY="-3.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/backgroundMarlos.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="blackTrain" fitHeight="127.0" fitWidth="31.0" layoutX="26.0" layoutY="193.0" opacity="0.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+         <image>
+            <Image url="@../resources/blackTrain.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="redTrain" fitHeight="127.0" fitWidth="31.0" layoutX="751.0" layoutY="316.0" opacity="0.0" pickOnBounds="true" preserveRatio="true" rotate="270.0">
+         <image>
+            <Image url="@../resources/redTrainRight.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="Iniciar" layoutX="456.0" layoutY="450.0" mnemonicParsing="false" onAction="#startButton" prefHeight="72.0" prefWidth="222.0" stylesheets="@../resources/style.css" text="INICIAR">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ChoiceBox fx:id="positionBox" layoutX="442.0" layoutY="357.0" onDragDetected="#positionList" opacity="0.0" prefHeight="60.0" prefWidth="250.0" stylesheets="@../resources/style.css">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ChoiceBox>
+      <ChoiceBox fx:id="solutionBox" layoutX="442.0" layoutY="430.0" onDragDetected="#solutionList" opacity="0.0" prefHeight="60.0" prefWidth="250.0" stylesheets="@../resources/style.css">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ChoiceBox>
+      <Button fx:id="continueButton" layoutX="461.0" layoutY="514.0" mnemonicParsing="false" onAction="#continueButton" opacity="0.0" prefHeight="60.0" prefWidth="212.0" style="-fx-background-radius: 50px;" stylesheets="@../resources/style.css" text="CONTINUAR">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="45.0" />
+         </font>
+      </Button>
+      <Button fx:id="speedUpBlackTrain" layoutX="234.0" layoutY="529.0" mnemonicParsing="false" opacity="0.0" prefHeight="31.0" prefWidth="30.0" stylesheets="@../resources/style.css" text="+" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="slowDownBlackTrain" layoutX="57.0" layoutY="529.0" mnemonicParsing="false" opacity="0.0" prefHeight="31.0" prefWidth="30.0" stylesheets="@../resources/style.css" text="-" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fx:id="blackTrainSpeed" fitHeight="114.0" fitWidth="42.0" layoutX="142.0" layoutY="488.0" opacity="0.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+         <image>
+            <Image url="@../resources/blackTrainRight.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="speedUpRedTrain" layoutX="720.0" layoutY="526.0" mnemonicParsing="false" opacity="0.0" prefHeight="31.0" prefWidth="30.0" stylesheets="@../resources/style.css" text="+" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="slowDownRedTrain" layoutX="544.0" layoutY="526.0" mnemonicParsing="false" opacity="0.0" prefHeight="31.0" prefWidth="30.0" stylesheets="@../resources/style.css" text="-" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fx:id="redTrainSpeed" fitHeight="107.0" fitWidth="44.0" layoutX="630.0" layoutY="491.0" opacity="0.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+         <image>
+            <Image url="@../resources/redTrainRight.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="textBlack" layoutX="65.0" layoutY="502.0" opacity="0.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Velocidade">
+         <font>
+            <Font name="Verdana Bold" size="32.0" />
+         </font>
+      </Text>
+      <Text fx:id="textRed" fill="RED" layoutX="559.0" layoutY="502.0" opacity="0.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Velocidade">
+         <font>
+            <Font name="Verdana Bold" size="32.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="speedControlImage" fitHeight="158.0" fitWidth="212.0" layoutX="295.0" layoutY="443.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/speedControl.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,53 @@
+#Iniciar{
+    -fx-background-color: rgb(255, 255, 255);
+    -fx-font: 18pt "Arial";
+    -fx-font-weight: bold;
+    -fx-border-width: 4px;
+    -fx-border-color: rgb(0, 0, 0);
+}
+
+#positionBox{
+    -fx-background-color: rgb(255, 255, 255);
+    -fx-font: 14pt "Arial";
+    -fx-font-weight: bold;
+    -fx-border-width: 4px;
+    -fx-border-color: rgb(0, 0, 0);
+}
+
+#solutionBox{
+    -fx-background-color: rgb(255, 255, 255);
+    -fx-font: 14pt "Arial";
+    -fx-font-weight: bold;
+    -fx-border-width: 4px;
+    -fx-border-color: rgb(0, 0, 0);
+}
+
+#continueButton{
+    -fx-background-color: rgb(255, 255, 255);
+    -fx-font: 14pt "Arial";
+    -fx-font-weight: bold;
+    -fx-border-radius:50px;
+    -fx-border-width: 4px;
+    -fx-border-color: rgb(0, 0, 0);
+}
+
+#slowDownBlackTrain {
+    -fx-background-color: rgb(0, 0, 0);
+    -fx-font: 10pt "Arial";
+    -fx-font-weight: bold;
+}
+#speedUpBlackTrain{
+    -fx-background-color: rgb(0, 0, 0);
+    -fx-font: 10pt "Arial";
+    -fx-font-weight: bold;
+}
+#slowDownRedTrain {
+    -fx-background-color: rgb(255, 0, 0);
+    -fx-font: 10pt "Arial";
+    -fx-font-weight: bold;
+}
+#speedUpRedTrain{
+    -fx-background-color: rgb(255, 0, 0);
+    -fx-font: 10pt "Arial";
+    -fx-font-weight: bold;
+}
