@@ -18,6 +18,7 @@ a 1 e o trem vai aguardar o outro trem atravessar a ponte e após isso, o valor 
 
 ## Aplicação em execução:
 ![Layout](https://github.com/oantoniovinicius/Trains-Problem/blob/main/resources/executionGif.gif)
+Solução utilizada na demonstração: estrita alternância.
 
 ## Autores:
 - [@oantoniovinicius](https://www.github.com/oantoniovinicius)
